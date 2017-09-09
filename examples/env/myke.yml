@@ -1,0 +1,33 @@
+---
+project: env
+desc: Usage of environment variables.
+env_files:
+  # dotenv files can be loaded from env_files property
+  - test.env
+env:
+  # env values can be defined in yml
+  KEY_YML: value_from_yml
+
+  # dotenv files will override properties defined in yml
+  KEY_ENVFILE: will be loaded from test.env
+  KEY_ENVFILE_LOCAL: will be overridden from test.env.local
+
+  # <this-yml-file-name>.env is always loaded by default
+  KEY_MYKE: will be loaded from myke.env
+  KEY_MYKE_LOCAL: will be overridden from myke.env.local
+
+  # PATH is always prepended, not overwritten
+  PATH: path_from_yml
+tasks:
+  yml:
+    cmd: echo envvar from yml is $KEY_YML
+  file_default:
+    cmd: echo envvar from myke.env is $KEY_MYKE
+  file_default_local:
+    cmd: echo envvar from myke.env.local is $KEY_MYKE_LOCAL
+  file_custom:
+    cmd: echo envvar from test.env is $KEY_ENVFILE
+  file_custom_local:
+    cmd: echo envvar from test.env.local is $KEY_ENVFILE_LOCAL
+  path:
+    cmd: echo PATH is $PATH
