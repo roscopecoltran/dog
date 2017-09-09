@@ -1,0 +1,16 @@
+language: go
+
+go:
+  - 1.8
+
+install:
+  - make deps
+
+before_script:
+  - mkdir -p $GOPATH/src/github.com/alexandrecarlton
+  - ln -s $PWD $GOPATH/src/github.com/alexandrecarlton/gogurt
+
+script:
+  - make install
+  # Wait 60 minutes before timing out... gcc takes 45 minimum to build.
+  - travis_wait 60 bats tests
