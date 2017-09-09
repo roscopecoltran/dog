@@ -1,0 +1,31 @@
+{
+  "deadline": "3m",
+  "enable": [
+    "aligncheck",
+    "deadcode",
+    "dupl",
+    "errcheck",
+    "gas",
+    "goconst",
+    "gocyclo",
+    "gofmt",
+    "goimports",
+    "golint",
+    "gotype",
+    "ineffassign",
+    "interfacer",
+    "lll",
+    "megacheck",
+    "misspell",
+    "structcheck",
+    "test",
+    "testify",
+    "unconvert",
+    "unparam",
+    "varcheck",
+    "vet",
+    "vetshadow"
+  ],
+  "linelength": 120,
+  "vendor": true
+}
