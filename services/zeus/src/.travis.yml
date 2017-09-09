@@ -1,0 +1,5 @@
+language: go
+go:
+  - master
+install:
+  - sudo apt-get install screen lua5.2 python ruby
