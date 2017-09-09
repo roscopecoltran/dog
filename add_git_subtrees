@@ -9,3 +9,6 @@ git subtree add --prefix services/dog/src https://github.com/dogtools/dog master
 git subtree add --prefix services/myke/src https://github.com/goeuro/myke master --squash
 git subtree add --prefix services/zeus/src https://github.com/dreadl0ck/zeus master --squash
 git subtree add --prefix services/go-task/src https://github.com/go-task/task master --squash
+
+git subtree add --prefix services/cayley/src https://github.com/cayleygraph/cayley master --squash
+git subtree add --prefix services/abrain/src https://github.com/arbrain/abrain master --squash
