@@ -1,0 +1,11 @@
+---
+project: example
+desc: example project suite
+discover:
+  - env
+  - hooks
+  - mixin
+  - retry
+  - tag
+  - template
+  - shell

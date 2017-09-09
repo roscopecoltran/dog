@@ -1,0 +1,15 @@
+---
+project: hooks
+desc: |-
+  tasks can run other tasks before and after.
+  these before/after dependencies get passed the full arguments of this task.
+tasks:
+  before:
+    before: echo running before
+    cmd: echo
+  after:
+    cmd: echo
+    after: echo running after
+  error:
+    cmd: foobar
+    error: echo there was an error
