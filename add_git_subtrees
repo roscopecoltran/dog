@@ -15,10 +15,8 @@ git subtree add --prefix services/dgraph/src https://github.com/dgraph-io/dgraph
 git subtree add --prefix services/go-url-fuzzer/src https://github.com/mtojek/go-url-fuzzer master --squash
 git subtree add --prefix services/fluided/src https://github.com/theskyinflames/fluided master --squash
 git subtree add --prefix services/scipipe/src https://github.com/scipipe/scipipe master --squash
-
 git subtree add --prefix services/scipipe/src https://github.com/flowbase/flowbase master --squash
 git subtree add --prefix services/rdf2smw/src https://github.com/rdfio/rdf2smw master --squash
 git subtree add --prefix services/goflow/src https://github.com/abferm/goflow master --squash
-
 git subtree add --prefix services/packman/src https://github.com/jboursiquot/packman master --squash
-
+git subtree add --prefix services/bandmaster/src https://github.com/znly/bandmaster master --squash
