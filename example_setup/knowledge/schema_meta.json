@@ -1,0 +1,69 @@
+{
+    "nodes": [{
+                "node": "User",
+                "properties": [
+                    {
+                        "property": "name",
+                        "type": "String",
+                        "constraint": "Indexed"
+                    },
+                    {
+                        "property": "user_id",
+                        "type": "Integer",
+                        "constraint": "Unique"
+                    }
+                ],
+                "edgesOut": [
+                    {
+                        "edge": "LIVES_IN",
+                        "to": "Region"
+
+                    },
+                    {
+                        "edge": "LITENS",
+                        "to": "Songs",
+                        "properties": [
+                            {
+                                "property": "weight",
+                                "type": "Integer"
+                            }
+                        ]
+                    }
+                ]
+            },
+            { 
+                "node": "Region",
+                "properties": [
+                    {
+                        "property": "name",
+                        "type": "String",
+                        "constraint": "Indexed"
+                    },
+                    {
+                        "property": "region_id",
+                        "type": "Integer",
+                        "constraint": "Unique"
+                    }
+                ]
+            },
+            {
+                "node": "Song",
+                "properties": [
+                    {
+                        "property": "id",
+                        "type": "String",
+                        "constraint": "Unique"
+                    },
+                    {
+                        "property": "name",
+                        "type": "String",
+                        "constraint": "Indexed"
+                    },
+                    {
+                        "property": "artist",
+                        "type": "String",
+                        "constraint": "Indexed"
+                    }
+                ]
+            }]
+}
