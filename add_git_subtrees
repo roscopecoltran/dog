@@ -12,3 +12,6 @@ git subtree add --prefix services/go-task/src https://github.com/go-task/task ma
 
 git subtree add --prefix services/cayley/src https://github.com/cayleygraph/cayley master --squash
 git subtree add --prefix services/abrain/src https://github.com/arbrain/abrain master --squash
+
+git subtree add --prefix services/dgraph/src https://github.com/dgraph-io/dgraph master --squash
+git subtree add --prefix services/go-url-fuzzer/src https://github.com/mtojek/go-url-fuzzer master --squash
