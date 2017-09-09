@@ -20,3 +20,9 @@ git subtree add --prefix services/rdf2smw/src https://github.com/rdfio/rdf2smw m
 git subtree add --prefix services/goflow/src https://github.com/abferm/goflow master --squash
 git subtree add --prefix services/packman/src https://github.com/jboursiquot/packman master --squash
 git subtree add --prefix services/bandmaster/src https://github.com/znly/bandmaster master --squash
+git subtree add --prefix services/r2g/src https://github.com/HamiTrip/R2G master --squash
+git subtree add --prefix services/tusk/src https://github.com/rliebz/tusk master --squash
+git subtree add --prefix services/machinery/src https://github.com/RichardKnop/machinery master --squash
+git subtree add --prefix services/nut/src https://github.com/matthieudelaro/nut master --squash
+
+# git subtree add --prefix services/nut/src https://github.com/matthieudelaro/nut master --squash
